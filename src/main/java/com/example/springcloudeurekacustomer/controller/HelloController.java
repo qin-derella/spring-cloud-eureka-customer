@@ -16,4 +16,9 @@ public class HelloController {
     public String index(@PathVariable("name") String name) {
         return helloRemote.hello(name);
     }
+
+    @RequestMapping("/test")
+    public String test() {
+        return "springcloud-customer-test";
+    }
 }
